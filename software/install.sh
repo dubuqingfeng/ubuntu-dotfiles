@@ -45,4 +45,10 @@ add-apt-repository -y ppa:damien-moore/codeblocks-stable
 
 apt-get install -qq -y php7.0 libapache2-mod-php7.0 php7.0-gd php-pear
 
+
+###
+apt-get install -qq -y fcitx
+apt-get install -qq -y shadowsocks-qt5
+#vi /usr/local/etc/proxychains.conf
+
 rm -rf /var/lib/apt/lists/*
