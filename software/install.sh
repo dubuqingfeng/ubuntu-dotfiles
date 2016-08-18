@@ -26,6 +26,7 @@ apt-get install -qq -y git
 apt-get install -qq -y gitg
 #Zsh
 apt-get install -qq -y zsh
+apt install python-pip
 wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh
 
 add-apt-repository -y ppa:fcitx-team/nightly
@@ -43,12 +44,17 @@ add-apt-repository -y ppa:damien-moore/codeblocks-stable
 #dpkg -i google-chrome-stable_current_amd64.deb
 #apt-get install -f
 
-apt-get install -qq -y php7.0 libapache2-mod-php7.0 php7.0-gd php-pear
+apt-get install -qq -y php7.0 libapache2-mod-php7.0 php7.0-gd php-pear php7.0-mbstring
 
 
 ###
 apt-get install -qq -y fcitx
 apt-get install -qq -y shadowsocks-qt5
+apt-get install -qq -y sublime-text-installer
+
+apt-get install -qq -y docky
+apt-get install -qq -y unity-tweak-tool
+apt-get install -qq -y codeblocks
 #vi /usr/local/etc/proxychains.conf
 
 rm -rf /var/lib/apt/lists/*
