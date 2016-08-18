@@ -30,6 +30,8 @@ apt-get install -qq -y zsh
 wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh
 #Python-pip
 apt-get install -qq -y python-pip
+#terminator
+apt-get install -qq -y terminator
 
 add-apt-repository -y ppa:fcitx-team/nightly
 add-apt-repository -y ppa:hzwhuang/ss-qt5

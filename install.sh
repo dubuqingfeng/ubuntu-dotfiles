@@ -21,6 +21,16 @@ elif [ -f $HOME/.gitconfig ];then
 fi
 ln -s $BASE_DIR/git/.gitconfig $HOME/.gitconfig
 
+#建立terminator配置链接
+echo "配置terminator..."
+mkdir -p $HOME/.config/terminator
+if [ -L $HOME/.config/terminator/config ];then
+    unlink $HOME/.config/terminator/config
+elif [ -f $HOME/.config/terminator/config ];then
+    mv $HOME/.config/terminator/config $HOME/.config/terminator/config.$TODAY
+fi
+ln -s $BASE_DIR/terminator/config $HOME/.config/terminator/config
+
 #配置Vim
 echo "备份vim配置..."
 for i in $HOME/.vimrc
