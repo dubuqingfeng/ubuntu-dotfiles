@@ -26,8 +26,9 @@ apt-get install -qq -y git
 apt-get install -qq -y gitg
 #Zsh
 apt-get install -qq -y zsh
-apt install python-pip
 wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh
+#Python-pip
+apt-get install -qq -y python-pip
 
 add-apt-repository -y ppa:fcitx-team/nightly
 add-apt-repository -y ppa:hzwhuang/ss-qt5
@@ -56,5 +57,9 @@ apt-get install -qq -y docky
 apt-get install -qq -y unity-tweak-tool
 apt-get install -qq -y codeblocks
 #vi /usr/local/etc/proxychains.conf
+
+#docker
+#vagrant
+#
 
 rm -rf /var/lib/apt/lists/*
