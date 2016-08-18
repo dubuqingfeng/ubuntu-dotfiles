@@ -13,6 +13,7 @@ echo "Installing core packages."
 #ldconfig
 if [ $(getconf WORD_BIT) = '32' ] && [ $(getconf LONG_BIT) = '64' ] ; then
     echo "64"
+    #sogou pinyin
     #wget -q -O sogoupinyin_i386.deb http://pinyin.sogou.com/linux/download.php?f=linux&bit=64
 else
     echo "32"
@@ -41,6 +42,7 @@ add-apt-repository -y ppa:freyja-dev/unity-tweak-tool-daily
 add-apt-repository -y ppa:damien-moore/codeblocks-stable
 
 ###
+#chrome
 #wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 #dpkg -i google-chrome-stable_current_amd64.deb
 #apt-get install -f
@@ -56,10 +58,22 @@ apt-get install -qq -y sublime-text-installer
 apt-get install -qq -y docky
 apt-get install -qq -y unity-tweak-tool
 apt-get install -qq -y codeblocks
+
+#proxychains-ng
 #vi /usr/local/etc/proxychains.conf
 
+#composer
+#curl -sS https://getcomposer.org/installer | php
+#mv composer.phar /usr/local/bin/composer
+#chmod 755 /usr/local/bin/composer
 #docker
 #vagrant
 #
+#apache2
+#nodejs
+#phalcon
+#界面美化
+
+#android / LaTeX
 
 rm -rf /var/lib/apt/lists/*
