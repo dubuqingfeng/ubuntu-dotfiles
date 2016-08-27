@@ -56,6 +56,11 @@ plugins=(git)
 # export PATH="/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
 # export MANPATH="/usr/local/man:$MANPATH"
 
+export JAVA_HOME=/usr/local/java
+export JRE_HOME=/usr/local/java/jre
+export CLASSPATH=.:$CLASSPATH:$JAVA_HOME/lib:$JRE_HOME/lib
+export PATH=$PATH:$JAVA_HOME/bin:$JRE_HOME/bin
+
 source $ZSH/oh-my-zsh.sh
 
 # You may need to manually set your language environment

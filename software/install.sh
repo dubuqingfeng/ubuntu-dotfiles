@@ -32,6 +32,9 @@ wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - 
 apt-get install -qq -y python-pip
 #terminator
 apt-get install -qq -y terminator
+#java
+#tar -xzf jdk-8u65-linux-x64.tar.gz
+#mv jdk1.8.0_101 /usr/local/java
 
 add-apt-repository -y ppa:fcitx-team/nightly
 add-apt-repository -y ppa:hzwhuang/ss-qt5
@@ -77,5 +80,7 @@ apt-get install -qq -y codeblocks
 #界面美化
 
 #android / LaTeX
+#keepass
+#deluge
 
 rm -rf /var/lib/apt/lists/*
