@@ -1,6 +1,6 @@
-##README.md
+## README.md
 
-##Install Software
+## Install Software
 
 #### Core Packages
 
